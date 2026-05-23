@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">HelloWearDroid</string>
-    <string name="hello_world">Hello, %1$s!</string>
+    <string name="watch_battery_static_label">Watch battery</string>
+    <string name="watch_battery_value">%1$d%%</string>
 </resources>

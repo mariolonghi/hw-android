@@ -12,7 +12,12 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.mariolonghi.helloweardroid.wear"
+        // Must match the phone module's applicationId. Wear Data Layer scopes
+        // DataItems by applicationId + signing key; with mismatched IDs the
+        // watch app can't see DataItems published by the phone app, even on
+        // the same paired device. Namespace (the Kotlin package) stays
+        // distinct above; only this line needs to match.
+        applicationId = "com.mariolonghi.helloweardroid"
         minSdk = 30
         targetSdk = 36
         versionCode = 1
@@ -40,6 +45,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":shared"))
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.foundation)

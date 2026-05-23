@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">HelloWearDroid</string>
-    <string name="watch_battery_static_label">Watch battery</string>
-    <string name="watch_battery_value">%1$d%%</string>
+    <string name="section_phone">Phone</string>
+    <string name="section_watch">Watch</string>
+    <string name="phone_offline">Phone offline</string>
+    <string name="toggle_on">Toggle: ON</string>
+    <string name="toggle_off">Toggle: OFF</string>
+    <string name="battery_value">Battery: %1$d%%</string>
 </resources>

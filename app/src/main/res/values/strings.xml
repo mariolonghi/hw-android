@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">HelloWearDroid</string>
+    <string name="toggle_label">Active</string>
+    <string name="text_input_label">Message</string>
+    <string name="phone_battery_unknown">Phone battery: …</string>
+    <string name="phone_battery_label">Phone battery: %1$d%%</string>
 </resources>
